@@ -7,7 +7,6 @@ const tasks = [];
 form.addEventListener("submit", function(event)
 {
    event.preventDefault();
-
    const taskName = taskInput.value;
    const taskPriority = priorityInput.value;
 
