@@ -61,13 +61,20 @@ function displayTasks()
 
         completeButton.addEventListener("click", function()
         {
-            tasks[i].completed = true;
-            displayTasks();
+            if (tasks[i].completed === true)
+            {
+                tasks[i].completed = false;
+            }
+             else
+             {
+                tasks[i].completed = true;
+            }
+
+           displayTasks();
         });
 
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
-
 
         deleteButton.addEventListener("click", function()
         {
